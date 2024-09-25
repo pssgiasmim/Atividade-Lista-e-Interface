@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Pocao : Item
 {
-    
+    public override void Interagir()
+    {
+        
+    }
 }
