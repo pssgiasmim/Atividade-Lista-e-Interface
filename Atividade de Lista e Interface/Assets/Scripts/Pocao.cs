@@ -8,4 +8,9 @@ public class Pocao : Item
     {
         
     }
+
+    public override void Consumir()
+    {
+
+    }
 }
