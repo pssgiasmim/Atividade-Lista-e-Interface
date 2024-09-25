@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC : IInterface
 {
-    public void Interagir()
+    public virtual void Interagir()
     {
 
     }

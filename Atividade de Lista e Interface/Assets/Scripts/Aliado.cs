@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Aliado : NPC
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Interagir()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("O Seu alidado te ofereceu ajuda na batalha!");
     }
 }
