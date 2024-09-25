@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Item : IInterface, IConsumivel
 {
-    public interface IInterface
+    public virtual void Interagir()
     {
 
     }
 
-    public interface IConsumivel
+    public virtual void Consumir()
     {
 
     }
