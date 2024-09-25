@@ -7,22 +7,35 @@ public class Gerenciador : MonoBehaviour
     //Variáveis que criam as Listas que armazem os NPCs e os itens
     [SerializeField] List<NPC> npcs = new List<NPC>();
     [SerializeField] List<Item> itens = new List<Item>();
-
     [SerializeField] Item itemAtual;
-    [SerializeField] NPC npc;
+    [SerializeField] NPC npcAtual;
+
+    [SerializeField] Aliado aliado;
+    [SerializeField] Inimigo inimigo;
+    [SerializeField] Comerciante comerciante;
+
+    [SerializeField] Pocao pocao;
+    [SerializeField] Comida comida;
 
     //Método que adciona itens na lista Item
-    public void AdicionarItens(Item item)
+    public void AdicionarItens()
     {
-        itens.Add(item);
-
+        itens.Add(pocao);
+        itens.Add(comida);
     }
+
+
+
 
     //Método que adciona NPCs na lista NPC
-    public void AdicionarNpcs(NPC npc)
+    public void AdicionarNpcs()
     {
-        npcs.Add(npc);
+        npcs.Add(aliado);
+        npcs.Add(inimigo);
+        npcs.Add(comerciante);
     }
+
+
 
     //Método que faz os itens interagirem com o jogador
     public void IntergirItens()
@@ -33,14 +46,23 @@ public class Gerenciador : MonoBehaviour
         }
     }
 
+
+
     //Método que faz os NPCs interagirem com o jogador
     public void InteragirNpcs()
     {
-        foreach (NPC npc in npcs)
+
+        NPC[aliado];
+        NPC[inimigo];
+        NPC[]
+
+       /* foreach (NPC npc in npcs)
         {
             npc.Interagir();
-        }
+        }*/
     }
+
+
 
     //Método que faz os itens serem consumidos
     public void ConsumirItens()
@@ -52,24 +74,33 @@ public class Gerenciador : MonoBehaviour
 
     }
 
+
+
+
     //Método que ao botão especifico ser clicado, vai chamar os itens
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
-            AdicionarItens(itemAtual);
+            AdicionarItens();
 
         }
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            AdicionarNpcs(npc);
+            AdicionarNpcs();
             
         }
 
         if (Input.GetKeyDown(KeyCode.H))
         {
             ConsumirItens();
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            InteragirNpcs();
 
         }
     }
