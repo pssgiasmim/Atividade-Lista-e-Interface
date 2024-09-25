@@ -2,11 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public interface IInterface
 {
-    //Método responsávelç pela ação de interagir dos NPCs e dos itens
-    public void Interagir()
-    {
-        
-    }
+    public void Interagir();
 }
