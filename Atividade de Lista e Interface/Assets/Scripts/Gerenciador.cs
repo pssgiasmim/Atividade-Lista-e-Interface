@@ -51,15 +51,10 @@ public class Gerenciador : MonoBehaviour
     //Método que faz os NPCs interagirem com o jogador
     public void InteragirNpcs()
     {
-
-        NPC[aliado];
-        NPC[inimigo];
-        NPC[]
-
-       /* foreach (NPC npc in npcs)
+        foreach (NPC npc in npcs)
         {
             npc.Interagir();
-        }*/
+        }
     }
 
 
